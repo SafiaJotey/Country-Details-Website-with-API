@@ -11,7 +11,7 @@ searchBtn.addEventListener("click",function(){
        error.innerText="Field is empty";
    }
    countryContainer.textContent="";
-   const url=`https://restcountries.eu/rest/v2/name/${searchValue}`
+   const url=`https://restcountries.com/v3.1/name/${searchValue}`
    fetch(url)
    .then(res=>res.json())
    .then(data=>ShowData(data))
